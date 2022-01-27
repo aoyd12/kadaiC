@@ -12,7 +12,7 @@
    if(hour < 10) hour = "0" + hour;
    if(minute < 10) minute = "0" + minute;
    if(second < 10) second = "0" + second;
-   document.getElementById('my clock').innerHTML = hour + ":" + minute + ":" + second; 
+   document.getElementById('myClock').innerHTML = hour + ":" + minute + ":" + second; 
 }
 
 function start(){
@@ -26,7 +26,7 @@ function start(){
 }
   </script>
   </head>
-  <body>
+  <body onload = "start();">
     <h1 align = "center">デジタル時計</h1>
     <div id = "myClock" align = "center" style = "font:bold 40pt Times New Roman; color = #008888;">
     </div>
