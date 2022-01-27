@@ -19,14 +19,9 @@ function start(){
    setInterval("updateClock();", 1000);
    updateClock();
 }
-
-function start(){
-   updateClock();
-   setTimeout("start();", 1000);
-}
   </script>
   </head>
-  <body = "start();">
+  <body onload = "start();">//onloadでstart関数を呼び出す　
     <h1 align = "center">デジタル時計</h1>
     <div id = "myClock" align = "center" style = "color:blue;"></div>
   </body>
